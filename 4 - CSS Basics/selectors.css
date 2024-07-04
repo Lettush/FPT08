@@ -1,0 +1,71 @@
+/* Element Selector */
+span {
+    color:coral;
+}
+
+/* Class Selector */
+.class-name {
+    color: yellow;
+}
+
+/* ID Selector */
+#id-name {
+    color: turquoise;
+}
+
+/* Universal Selector */
+/* is easily overriden  */
+* {
+    color: green;
+}
+
+/* Attribute Selector */
+/* targetting specific elements with the href attribute */
+h3[href] {
+    color: plum;
+    background-color: beige;
+}
+
+/* target elements with the href attribute */
+[href]{
+    color: white;
+    background-color: brown;
+}
+
+/* targetting a specific element with a specific attribute value */
+
+h3[href='www.example.com']{
+    color: tomato;
+}
+
+/* Ruleset: follow more specific selectors than the general selector */
+
+/* Grouping Selector */
+h1, h2, .parag, .class-name {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Descendant Selector */
+div h3 {
+    color: chartreuse;
+}
+
+.ancestor h3 {
+    color: chartreuse;
+}
+
+/* Pseudo-classes (:)*/
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Pseudo-element (::)*/
+#pseudo-element::after{
+    content: 'Placed after h3'
+}
+
+#pseudo-element::first-letter{
+    color: salmon;
+}
+

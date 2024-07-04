@@ -1,0 +1,31 @@
+.relative {
+    /* relative to its original position */
+    position: relative;
+    top:10px;
+    left:0px;
+    background-color: blue;
+    color: white;
+}
+
+.absolute{
+    /* relative to its nearest ancestor */
+    position: absolute;
+    top:10px;
+    left:0px;
+    background-color: crimson;
+}
+
+.fixed {
+    /* relative to the viewport */
+    position: fixed;
+    background-color: green;
+    bottom: 0px;
+    right: 0px;
+}
+
+.sticky {
+    /* it's a mix of relative and fixed */
+    position: sticky;
+    background-color: coral;
+    top: 0px;
+}
